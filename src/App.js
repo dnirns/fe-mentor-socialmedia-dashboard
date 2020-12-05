@@ -1,57 +1,61 @@
-import React from 'react';
-import { useEffect, useState } from 'react';
-import './App.css';
+import React from 'react'
+import Totals from './components/Totals'
 
-function App() {
-  const [date, setDate] = useState(null);
-  useEffect(() => {
-    async function getDate() {
-      const res = await fetch('/api/date');
-      const newDate = await res.text();
-      setDate(newDate);
-    }
-    getDate();
-  }, []);
+import twitter from './images/icon-twitter.svg'
+import facebook from './images/icon-facebook.svg'
+import instagram from './images/icon-instagram.svg'
+import youtube from './images/icon-youtube.svg'
+
+const App = () => {
   return (
     <main>
-      <h1>Create React App + Go API</h1>
-      <h2>
-        Deployed with{' '}
-        <a
-          href="https://vercel.com/docs"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          Vercel
+      <div>
+        <h2>Social Media Dashboard</h2>
+      </div>
+      Total Followers: 23,004 Dark Mode
+      <div className='grid-container'>
+        <Totals
+          logo={facebook}
+          user='@nathanf'
+          total='1987'
+          newToday='12'
+          type='Followers'
+        />
+        <Totals
+          logo={twitter}
+          user='@nathanf'
+          total='1044'
+          newToday='99'
+          type='Followers'
+        />
+        <Totals
+          logo={instagram}
+          user='@realnathanf'
+          total='11k'
+          newToday='1099'
+          type='Followers'
+        />
+        <Totals
+          logo={youtube}
+          user='Nathan F.'
+          total='8239'
+          newToday='144'
+          type='Subscribers'
+        />
+      </div>
+      Overview - Today Page Views 87 3% Likes 52 2% Likes 5462 2257% Profile
+      Views 52k 1375% Retweets 117 303% Likes 507 553% Likes 107 19% Total Views
+      1407 12%
+      <footer></footer>
+      <div className='attribution'>
+        Challenge by
+        <a href='https://www.frontendmentor.io?ref=challenge'>
+          Frontend Mentor
         </a>
-        !
-      </h2>
-      <p>
-        <a
-          href="https://github.com/vercel/vercel/tree/master/examples/create-react-app"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          This project
-        </a>{' '}
-        was bootstrapped with{' '}
-        <a href="https://facebook.github.io/create-react-app/">
-          Create React App
-        </a>{' '}
-        and contains three directories, <code>/public</code> for static assets,{' '}
-        <code>/src</code> for components and content, and <code>/api</code>{' '}
-        which contains a serverless <a href="https://golang.org/">Go</a>{' '}
-        function. See{' '}
-        <a href="/api/date">
-          <code>api/date</code> for the Date API with Go
-        </a>
-        .
-      </p>
-      <br />
-      <h2>The date according to Go is:</h2>
-      <p>{date ? date : 'Loading date...'}</p>
+        . Coded by <a href='#'>Daniel Irons</a>.
+      </div>
     </main>
-  );
+  )
 }
 
-export default App;
+export default App

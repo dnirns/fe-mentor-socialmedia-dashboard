@@ -1,0 +1,29 @@
+html {
+  font-family: 'Inter';
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border: 1px solid black;
+  margin: 20px;
+  padding: 10px;
+
+  justify-content: center;
+  align-items: center;
+}
