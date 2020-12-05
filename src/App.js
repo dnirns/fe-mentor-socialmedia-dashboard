@@ -52,7 +52,7 @@ const App = () => {
         <a href='https://www.frontendmentor.io?ref=challenge'>
           Frontend Mentor
         </a>
-        . Coded by <a href='#'>Daniel Irons</a>.
+        . Coded by <a href='https://www.dnirns.com'>Daniel Irons</a>.
       </div>
     </main>
   )
