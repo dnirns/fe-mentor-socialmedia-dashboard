@@ -1,6 +1,16 @@
 html {
   font-family: 'Inter';
+  min-height: 100vh;
 }
+
+.container {
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
 
 .attribution {
   font-size: 11px;
@@ -26,7 +36,6 @@ html {
   justify-content: center;
   align-items: center;
 }
-
 
 /*media queries for grid*/
 @media (max-width: 375px) {
