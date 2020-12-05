@@ -22,12 +22,20 @@ html {
   width: 20%;
   border: 1px solid black;
   padding: 10px;
+  margin: 15px;
   justify-content: center;
   align-items: center;
 }
 
+
+/*media queries for grid*/
 @media (max-width: 375px) {
   .grid-item {
     width: 90%;
+  }
+}
+@media (max-width: 800px) {
+  .grid-item {
+    width: 40%;
   }
 }
