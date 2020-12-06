@@ -11,10 +11,13 @@ const App = () => {
   return (
     <>
       <div className='container'>
-        <div>
-          <h2>Social Media Dashboard</h2>
+        <div className='toggle'>
+          <button>Dark Mode</button>
         </div>
-        Total Followers: 23,004 Dark Mode
+        <div className='heading'>
+          <h1>Social Media Dashboard</h1>
+          <h5 className='sub-heading'>Total Followers: 23,004</h5>
+        </div>
         <div className='grid-container'>
           <Totals
             logo={facebook}
@@ -45,6 +48,11 @@ const App = () => {
             type='Subscribers'
           />
         </div>
+
+        <div className='heading'>
+          <h2>Overview - Today</h2>
+        </div>
+
         <div className='grid-container'>
           <Overview
             type='Page Views'
@@ -81,8 +89,8 @@ const App = () => {
             percentage='12'
           />
         </div>
-        Overview - Today Likes
       </div>
+
       <footer>
         <div className='attribution'>
           Challenge by
