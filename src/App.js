@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react'/
 import Totals from './components/Totals'
 import Overview from './components/Overview'
 
@@ -13,6 +13,7 @@ const App = () => {
       <div className='container'>
         <div className='toggle'>
           <button>Dark Mode</button>
+          <p>UPDATE</p>
         </div>
         <div className='heading'>
           <h1>Social Media Dashboard</h1>
