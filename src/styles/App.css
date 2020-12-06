@@ -1,5 +1,27 @@
 html {
   font-family: 'Inter';
+  min-height: 100vh;
+}
+
+.heading {
+  margin: 0px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.sub-heading {
+  margin-top: 0px;
+}
+.toggle {
+  margin: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.container {
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .attribution {
@@ -12,18 +34,29 @@ html {
 
 .grid-container {
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .grid-item {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 20%;
   border: 1px solid black;
-  margin: 20px;
   padding: 10px;
-
+  margin: 15px;
   justify-content: center;
   align-items: center;
+}
+
+/*media queries for grid*/
+@media (max-width: 375px) {
+  .grid-item {
+    width: 90%;
+  }
+}
+@media (max-width: 800px) {
+  .grid-item {
+    width: 40%;
+  }
 }
