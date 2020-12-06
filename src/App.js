@@ -1,4 +1,4 @@
-import React from 'react'/
+import React from 'react'
 import Totals from './components/Totals'
 import Overview from './components/Overview'
 
