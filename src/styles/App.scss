@@ -1,0 +1,134 @@
+@import 'colors';
+
+html {
+  font-family: 'Inter';
+  min-height: 100vh;
+  color:$light-blue-text;
+}
+
+h1 {
+  font-size: 3em;
+  margin-top: 20px;
+}
+h1, h2 {
+  font-weight: bold;
+  color: $light-dark-blue-text;
+}
+
+img {
+  width: 20px;
+  padding: 8px;
+}
+
+.heading {
+  margin: 0px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.sub-heading {
+  margin-top: 0px;
+}
+
+.toggle {
+  margin: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.container {
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.grid-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  width: 18%;
+  margin: 15px;
+}
+
+.card-bg {
+  background: $light-blue-card-bg;
+  width: 100%;
+  padding: 15px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.card-border-top {
+  height: 4px;
+  width: 100%;
+  border-bottom: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+//card social top colors
+.facebook {
+  background: $facebook;
+}
+.twitter {
+  background: $twitter;
+}
+.instagram {
+  background: $instagram;
+}
+.youtube {
+  background: $youtube;
+}
+
+
+
+
+.username {
+  display: flex;
+  align-items: center;
+  color: $light-blue-text;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+
+
+
+
+
+/* mobile */
+@media (min-width: 375px) {
+  .grid-item {
+    width: 80%;
+  }
+}
+
+/* tablet */
+@media (min-width: 600px) {
+  .grid-item {
+    width: 40%;
+  }
+}
+
+/* laptop + */
+@media (min-width: 1000px) {
+  .grid-item {
+    width: 20%;
+  }
+}

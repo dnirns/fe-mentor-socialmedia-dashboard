@@ -15,7 +15,7 @@ const App = () => {
           <button>Dark Mode</button>
         </div>
         <div className='heading'>
-          <h1>Social Media Dashboard</h1>
+          <h2>Social Media Dashboard</h2>
           <h5 className='sub-heading'>Total Followers: 23,004</h5>
         </div>
         <div className='grid-container'>
@@ -24,28 +24,33 @@ const App = () => {
             user='@nathanf'
             total='1987'
             newToday='12'
-            type='Followers'
+            type='FOLLOWERS'
+            className='facebook'
+            style='facebook'
           />
           <Totals
             logo={twitter}
             user='@nathanf'
             total='1044'
             newToday='99'
-            type='Followers'
+            type='FOLLOWERS'
+            style='twitter'
           />
           <Totals
             logo={instagram}
             user='@realnathanf'
             total='11k'
             newToday='1099'
-            type='Followers'
+            type='FOLLOWERS'
+            style='instagram'
           />
           <Totals
             logo={youtube}
             user='Nathan F.'
             total='8239'
             newToday='144'
-            type='Subscribers'
+            type='SUBSCRIBERS'
+            style='youtube'
           />
         </div>
 
