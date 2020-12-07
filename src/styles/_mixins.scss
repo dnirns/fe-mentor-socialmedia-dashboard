@@ -1,0 +1,12 @@
+@mixin flex-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@mixin flex-card-background {
+  @include flex-centered;
+  background: $light-blue-card-bg;
+}
