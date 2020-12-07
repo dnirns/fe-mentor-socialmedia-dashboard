@@ -8,11 +8,12 @@ const TotalFollowers = ({
   type,
   style,
   change,
+  theme
 }) => {
   return (
-    <div className='grid-item'>
+    <div className={`grid-item`}>
       <div className={`card-border-top ${style}`} />
-      <div className='card-bg'>
+      <div className={`card-bg ${theme}`}>
         <div className='username'>
           <img src={logo} alt='sociallogo' />
           <p>{user}</p>
