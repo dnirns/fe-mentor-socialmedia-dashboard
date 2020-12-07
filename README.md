@@ -1,4 +1,4 @@
-[production build Vercel link](fe-mentor-socialmedia-dashboard-fsz57g1jr.vercel.app)
+[production build Vercel link](https://fe-mentor-socialmedia-dashboard-lhid9rl9a.vercel.app/)
 
 # Frontend Mentor - Social media dashboard with theme switcher
 
