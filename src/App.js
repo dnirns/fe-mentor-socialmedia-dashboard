@@ -22,13 +22,13 @@ const App = () => {
       <main className={theme}>
         <div className={`container ${theme}`}>
           <div className='heading'>
-            <div className='toggle'>
-              <Toggle handleToggle={() => setIsDark(!isDark)} />
-            </div>
             <h2>Social Media Dashboard</h2>
             <h5 className='sub-heading'>Total Followers: 23,004</h5>
           </div>
           <div className={`divider ${theme}`} />
+          <div className='toggle'>
+            <Toggle handleToggle={() => setIsDark(!isDark)} />
+          </div>
           <div className={`grid-container ${theme}`}>
             <Totals
               theme={theme}
